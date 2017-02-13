@@ -16,8 +16,8 @@
             </intent-filter>
         </activity>
 
-        <activity android:name=".ListViewDemoActivity">
-        </activity>
+        <activity android:name=".MultiItemList.ListViewDemoActivity"/>
+        <activity android:name=".SingleImageView.SingleImageDemoActivity"/>
     </application>
 
 </manifest>

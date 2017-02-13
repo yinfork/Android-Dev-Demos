@@ -1,5 +1,8 @@
 package com.inkenka.devdemos;
 
+import com.inkenka.devdemos.MultiItemList.ListViewDemoActivity;
+import com.inkenka.devdemos.SingleImageView.SingleImageDemoActivity;
+
 import android.content.Intent;
 import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
@@ -13,14 +16,12 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     private final static String TAG = "MainActivity";
 
+    private final static String DEMO_IMAGEVIEW = "ImageView Demo";
     private final static String DEMO_LISTVIEW = "ListView Demo";
-    private final static String DEMO_RECYCLEVIEW = "RecycleView Demo";
-    private final static String DEMO_VIEWPAGER = "Viewpager Demo";
 
     String[] mDemos = new String[]{
-        DEMO_LISTVIEW,
-        DEMO_RECYCLEVIEW,
-        DEMO_VIEWPAGER
+        DEMO_IMAGEVIEW,
+        DEMO_LISTVIEW
     };
 
     @Override
@@ -42,13 +43,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         Intent intent = new Intent();
         String demoName = mDemos[position];
         switch (demoName) {
+            case DEMO_IMAGEVIEW:
+                intent.setClass(MainActivity.this, SingleImageDemoActivity.class);
+                break;
             case DEMO_LISTVIEW:
-                intent.setClass(MainActivity.this, ListViewDemoActivity.class);
-                break;
-            case DEMO_RECYCLEVIEW:
-                intent.setClass(MainActivity.this, ListViewDemoActivity.class);
-                break;
-            case DEMO_VIEWPAGER:
                 intent.setClass(MainActivity.this, ListViewDemoActivity.class);
                 break;
         }
