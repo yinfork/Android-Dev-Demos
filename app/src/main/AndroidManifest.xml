@@ -26,6 +26,7 @@
         <activity android:name=".SingleImageView.SingleImageDemoActivity"/>
         <activity android:name=".videoview.VideoViewDemoActivity"/>
         <activity android:name=".FloatView.FloatViewDemoActivity"/>
+        <activity android:name=".ViewAnim.ViewAnimDemoActivity"/>
     </application>
 
 </manifest>
