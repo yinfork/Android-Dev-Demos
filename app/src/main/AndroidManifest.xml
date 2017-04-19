@@ -5,6 +5,9 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE"/>
     <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
 
+    <!-- 使用SYSTEM_ALERT_WINDOW时必须要加 -->
+    <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -22,6 +25,7 @@
         <activity android:name=".MultiItemList.ListViewDemoActivity"/>
         <activity android:name=".SingleImageView.SingleImageDemoActivity"/>
         <activity android:name=".videoview.VideoViewDemoActivity"/>
+        <activity android:name=".FloatView.FloatViewDemoActivity"/>
     </application>
 
 </manifest>

@@ -1,5 +1,6 @@
 package com.inkenka.devdemos;
 
+import com.inkenka.devdemos.FloatView.FloatViewDemoActivity;
 import com.inkenka.devdemos.MultiItemList.ListViewDemoActivity;
 import com.inkenka.devdemos.SingleImageView.SingleImageDemoActivity;
 import com.inkenka.devdemos.videoview.VideoViewDemoActivity;
@@ -20,11 +21,13 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private final static String DEMO_IMAGEVIEW = "ImageView Demo";
     private final static String DEMO_LISTVIEW = "ListView Demo";
     private final static String DEMO_VIDEOVIEW = "VideoView Demo";
+    private final static String DEMO_FLOATVIEW = "FloatView Demo";
 
     String[] mDemos = new String[]{
         DEMO_IMAGEVIEW,
         DEMO_LISTVIEW,
-        DEMO_VIDEOVIEW
+        DEMO_VIDEOVIEW,
+        DEMO_FLOATVIEW
     };
 
     @Override
@@ -54,6 +57,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case DEMO_VIDEOVIEW:
                 intent.setClass(MainActivity.this, VideoViewDemoActivity.class);
+                break;
+            case DEMO_FLOATVIEW:
+                intent.setClass(MainActivity.this, FloatViewDemoActivity.class);
                 break;
         }
 
