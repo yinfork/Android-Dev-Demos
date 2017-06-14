@@ -82,7 +82,7 @@ public class TextRecycleViewAdapter<T> extends RecyclerView.Adapter<TextRecycleV
         mOnItemClickListener = listener;
     }
 
-    interface OnItemClickListener<T>{
+    public interface OnItemClickListener<T>{
         void onItemClick(int position,T data);
     }
 }
