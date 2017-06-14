@@ -27,6 +27,14 @@
         <activity android:name=".videoview.VideoViewDemoActivity"/>
         <activity android:name=".FloatView.FloatViewDemoActivity"/>
         <activity android:name=".ViewAnim.ViewAnimDemoActivity"/>
+        <activity android:name=".recycleview.RecycleViewDemoActivity"/>
+        <activity android:name=".recycleview.SingleListRecycleViewActivity"/>
+        <activity android:name=".recycleview.GridRecycleViewActivity"/>
+        <activity android:name=".recycleview.AnomalyGridRecycleViewActivity"/>
+        <activity android:name=".recycleview.AnimRecycleViewActivity"/>
+        <activity android:name=".recycleview.WaterfallRecycleViewActivity"/>
+        <activity android:name=".recycleview.multitype.MultitypeRecycleViewActivity"/>
+        <activity android:name=".recycleview.RefreshRecycleViewActivity"/>
     </application>
 
 </manifest>
