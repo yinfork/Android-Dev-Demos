@@ -4,6 +4,7 @@ import com.inkenka.devdemos.ActivityStack.FirstActivity;
 import com.inkenka.devdemos.FloatView.FloatViewDemoActivity;
 import com.inkenka.devdemos.MultiItemList.ListViewDemoActivity;
 import com.inkenka.devdemos.SingleImageView.SingleImageDemoActivity;
+import com.inkenka.devdemos.ThrowException.ThrowExceptionActivity;
 import com.inkenka.devdemos.ViewAnim.ViewAnimDemoActivity;
 import com.inkenka.devdemos.recycleview.RecycleViewDemoActivity;
 import com.inkenka.devdemos.videoview.VideoViewDemoActivity;
@@ -28,6 +29,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private final static String DEMO_VIEW_ANIM = "View Anim Demo";
     private final static String DEMO_RECYCLEVIEW = "RecycleView Demo";
     private final static String DEMO_ACTIVITY_STACK = "Activity Stack Demo";
+    private final static String DEMO_THROW_EXCEPTION = "Throw Exception Demo";
 
     String[] mDemos = new String[]{
             DEMO_IMAGEVIEW,
@@ -36,7 +38,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             DEMO_FLOATVIEW,
             DEMO_VIEW_ANIM,
             DEMO_RECYCLEVIEW,
-            DEMO_ACTIVITY_STACK
+            DEMO_ACTIVITY_STACK,
+            DEMO_THROW_EXCEPTION
     };
 
     @Override
@@ -79,6 +82,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             case DEMO_ACTIVITY_STACK:
                 intent.setClass(MainActivity.this, FirstActivity.class);
                 break;
+            case DEMO_THROW_EXCEPTION:
+                intent.setClass(MainActivity.this, ThrowExceptionActivity.class);
+                break;
+
         }
 
         // 判断该Intent是否能被解析再启动
