@@ -35,6 +35,9 @@
         <activity android:name=".recycleview.WaterfallRecycleViewActivity"/>
         <activity android:name=".recycleview.multitype.MultitypeRecycleViewActivity"/>
         <activity android:name=".recycleview.RefreshRecycleViewActivity"/>
+        <activity android:name=".ActivityStack.FirstActivity"/>
+        <activity android:name=".ActivityStack.SecondActivity"/>
+        <activity android:name=".ActivityStack.ThirdActivity"/>
     </application>
 
 </manifest>

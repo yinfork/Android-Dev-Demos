@@ -1,5 +1,6 @@
 package com.inkenka.devdemos;
 
+import com.inkenka.devdemos.ActivityStack.FirstActivity;
 import com.inkenka.devdemos.FloatView.FloatViewDemoActivity;
 import com.inkenka.devdemos.MultiItemList.ListViewDemoActivity;
 import com.inkenka.devdemos.SingleImageView.SingleImageDemoActivity;
@@ -26,6 +27,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private final static String DEMO_FLOATVIEW = "FloatView Demo";
     private final static String DEMO_VIEW_ANIM = "View Anim Demo";
     private final static String DEMO_RECYCLEVIEW = "RecycleView Demo";
+    private final static String DEMO_ACTIVITY_STACK = "Activity Stack Demo";
 
     String[] mDemos = new String[]{
             DEMO_IMAGEVIEW,
@@ -33,7 +35,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             DEMO_VIDEOVIEW,
             DEMO_FLOATVIEW,
             DEMO_VIEW_ANIM,
-            DEMO_RECYCLEVIEW
+            DEMO_RECYCLEVIEW,
+            DEMO_ACTIVITY_STACK
     };
 
     @Override
@@ -72,6 +75,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case DEMO_RECYCLEVIEW:
                 intent.setClass(MainActivity.this, RecycleViewDemoActivity.class);
+                break;
+            case DEMO_ACTIVITY_STACK:
+                intent.setClass(MainActivity.this, FirstActivity.class);
                 break;
         }
 
