@@ -36,8 +36,15 @@
         <activity android:name=".recycleview.multitype.MultitypeRecycleViewActivity"/>
         <activity android:name=".recycleview.RefreshRecycleViewActivity"/>
         <activity android:name=".ActivityStack.FirstActivity"/>
-        <activity android:name=".ActivityStack.SecondActivity"/>
-        <activity android:name=".ActivityStack.ThirdActivity"/>
+        <activity
+            android:name=".ActivityStack.SecondActivity"
+            android:launchMode="singleTop"
+            />
+        <activity
+            android:name=".ActivityStack.ThirdActivity"
+            android:launchMode="singleTask"
+            android:taskAffinity=".ThirdActivityTask"
+            />
         <activity android:name=".ThrowException.ThrowExceptionActivity"/>
     </application>
 

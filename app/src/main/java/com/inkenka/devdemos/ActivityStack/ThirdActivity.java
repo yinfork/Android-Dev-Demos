@@ -25,14 +25,15 @@ public class ThirdActivity extends AppCompatActivity {
         mBtnTitle = (Button) findViewById(R.id.btn_title);
         mBtnTitle.setText(TAG);
         getSupportActionBar().setTitle(TAG);
-//        mBtnTitle.setOnClickListener(new View.OnClickListener() {
-//            @Override
-//            public void onClick(View v) {
-//                Intent intent = new Intent();
-//                intent.setClass(ThirdActivity.this, FirstActivity.class);
-//                startActivity(intent);
-//            }
-//        });
+        mBtnTitle.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent();
+                intent.setClass(ThirdActivity.this, SecondActivity.class);
+                intent.setClass(ThirdActivity.this, ThirdActivity.class);
+                startActivity(intent);
+            }
+        });
         Log.i("ActivityStack",TAG+" onCreate");
     }
 
@@ -41,6 +42,9 @@ public class ThirdActivity extends AppCompatActivity {
     protected void onDestroy() {
         super.onDestroy();
         Log.i("ActivityStack",TAG+" onDestroy");
+        Intent intent = new Intent();
+        intent.setClass(ThirdActivity.this, SecondActivity.class);
+        startActivity(intent);
     }
 
     @Override
