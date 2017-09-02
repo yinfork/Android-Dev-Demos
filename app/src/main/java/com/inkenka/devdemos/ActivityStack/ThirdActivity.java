@@ -29,7 +29,7 @@ public class ThirdActivity extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent();
-                intent.setClass(ThirdActivity.this, SecondActivity.class);
+//                intent.setClass(ThirdActivity.this, SecondActivity.class);
                 intent.setClass(ThirdActivity.this, ThirdActivity.class);
                 startActivity(intent);
             }
