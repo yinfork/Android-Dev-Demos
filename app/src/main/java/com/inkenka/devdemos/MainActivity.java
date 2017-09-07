@@ -2,6 +2,7 @@ package com.inkenka.devdemos;
 
 import com.inkenka.devdemos.ActivityStack.FirstActivity;
 import com.inkenka.devdemos.FloatView.FloatViewDemoActivity;
+import com.inkenka.devdemos.MemoryAnalysis.MemoryAnalysisActivity;
 import com.inkenka.devdemos.MultiItemList.ListViewDemoActivity;
 import com.inkenka.devdemos.SingleImageView.SingleImageDemoActivity;
 import com.inkenka.devdemos.ThrowException.ThrowExceptionActivity;
@@ -30,6 +31,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private final static String DEMO_RECYCLEVIEW = "RecycleView Demo";
     private final static String DEMO_ACTIVITY_STACK = "Activity Stack Demo";
     private final static String DEMO_THROW_EXCEPTION = "Throw Exception Demo";
+    private final static String DEMO_MEMORY_ANALYSIS = "Memory Analysis Demo";
 
     String[] mDemos = new String[]{
             DEMO_IMAGEVIEW,
@@ -39,7 +41,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             DEMO_VIEW_ANIM,
             DEMO_RECYCLEVIEW,
             DEMO_ACTIVITY_STACK,
-            DEMO_THROW_EXCEPTION
+            DEMO_THROW_EXCEPTION,
+            DEMO_MEMORY_ANALYSIS
     };
 
     @Override
@@ -84,6 +87,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case DEMO_THROW_EXCEPTION:
                 intent.setClass(MainActivity.this, ThrowExceptionActivity.class);
+                break;
+            case DEMO_MEMORY_ANALYSIS:
+                intent.setClass(MainActivity.this, MemoryAnalysisActivity.class);
                 break;
 
         }

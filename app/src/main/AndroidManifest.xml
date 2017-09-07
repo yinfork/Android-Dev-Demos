@@ -13,7 +13,8 @@
         android:icon="@mipmap/ic_launcher"
         android:label="@string/app_name"
         android:supportsRtl="true"
-        android:theme="@style/AppTheme">
+        android:theme="@style/AppTheme"
+        android:largeHeap="true">
         <activity android:name=".MainActivity">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -46,6 +47,67 @@
             android:taskAffinity=".ThirdActivityTask"
             />
         <activity android:name=".ThrowException.ThrowExceptionActivity"/>
+        <activity android:name=".MemoryAnalysis.MemoryAnalysisActivity"/>
+        <service
+            android:name=".MemoryAnalysis.BigMemoryService1"
+            android:process=":memory1"/>
+        <service
+            android:name=".MemoryAnalysis.BigMemoryService2"
+            android:process=":memory2"/>
+        <service
+            android:name=".MemoryAnalysis.BigMemoryService3"
+            android:process=":memory3"/>
+        <service
+            android:name=".MemoryAnalysis.BigMemoryService4"
+            android:process=":memory4"/>
+        <service
+            android:name=".MemoryAnalysis.BigMemoryService5"
+            android:process=":memory5"/>
+        <service
+            android:name=".MemoryAnalysis.BigMemoryService6"
+            android:process=":memory6"/>
+        <service
+            android:name=".MemoryAnalysis.BigMemoryService7"
+            android:process=":memory7"/>
+        <service
+            android:name=".MemoryAnalysis.BigMemoryService8"
+            android:process=":memory8"/>
+        <service
+            android:name=".MemoryAnalysis.BigMemoryService9"
+            android:process=":memory9"/>
+        <service
+            android:name=".MemoryAnalysis.BigMemoryService10"
+            android:process=":memory10"/>
+        <service
+            android:name=".MemoryAnalysis.BigMemoryService11"
+            android:process=":memory11"/>
+        <service
+            android:name=".MemoryAnalysis.BigMemoryService12"
+            android:process=":memory12"/>
+        <service
+            android:name=".MemoryAnalysis.BigMemoryService13"
+            android:process=":memory13"/>
+        <service
+            android:name=".MemoryAnalysis.BigMemoryService14"
+            android:process=":memory14"/>
+        <service
+            android:name=".MemoryAnalysis.BigMemoryService15"
+            android:process=":memory15"/>
+        <service
+            android:name=".MemoryAnalysis.BigMemoryService16"
+            android:process=":memory16"/>
+        <service
+            android:name=".MemoryAnalysis.BigMemoryService17"
+            android:process=":memory17"/>
+        <service
+            android:name=".MemoryAnalysis.BigMemoryService18"
+            android:process=":memory18"/>
+        <service
+            android:name=".MemoryAnalysis.BigMemoryService19"
+            android:process=":memory19"/>
+        <service
+            android:name=".MemoryAnalysis.BigMemoryService20"
+            android:process=":memory20"/>
     </application>
 
 </manifest>
