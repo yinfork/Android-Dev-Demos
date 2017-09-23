@@ -108,6 +108,7 @@
         <service
             android:name=".MemoryAnalysis.BigMemoryService20"
             android:process=":memory20"/>
+        <activity android:name=".ProcessWhiteList.ProcessWhiteListActivity"/>
     </application>
 
 </manifest>
