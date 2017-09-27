@@ -6,6 +6,7 @@ import com.inkenka.devdemos.MemoryAnalysis.MemoryAnalysisActivity;
 import com.inkenka.devdemos.MultiItemList.ListViewDemoActivity;
 import com.inkenka.devdemos.ProcessWhiteList.ProcessWhiteListActivity;
 import com.inkenka.devdemos.SingleImageView.SingleImageDemoActivity;
+import com.inkenka.devdemos.SpannableString.SpannableStringActivity;
 import com.inkenka.devdemos.ThrowException.ThrowExceptionActivity;
 import com.inkenka.devdemos.ViewAnim.ViewAnimDemoActivity;
 import com.inkenka.devdemos.recycleview.RecycleViewDemoActivity;
@@ -34,6 +35,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private final static String DEMO_THROW_EXCEPTION = "Throw Exception Demo";
     private final static String DEMO_MEMORY_ANALYSIS = "Memory Analysis Demo";
     private final static String DEMO_PROCESS_WHITE_LIST = "Add Process White List";
+    private final static String DEMO_SPANNABLE_STRING = "Spannable String";
 
     String[] mDemos = new String[]{
             DEMO_IMAGEVIEW,
@@ -45,7 +47,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             DEMO_ACTIVITY_STACK,
             DEMO_THROW_EXCEPTION,
             DEMO_MEMORY_ANALYSIS,
-            DEMO_PROCESS_WHITE_LIST
+            DEMO_PROCESS_WHITE_LIST,
+            DEMO_SPANNABLE_STRING
     };
 
     @Override
@@ -97,6 +100,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             case DEMO_PROCESS_WHITE_LIST:
                 intent.setClass(MainActivity.this, ProcessWhiteListActivity.class);
                 break;
+            case DEMO_SPANNABLE_STRING:
+                intent.setClass(MainActivity.this, SpannableStringActivity.class);
         }
 
         // 判断该Intent是否能被解析再启动
