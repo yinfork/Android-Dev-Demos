@@ -91,4 +91,16 @@ public class FirstActivity extends AppCompatActivity {
         super.onRestoreInstanceState(savedInstanceState);
         Log.i("ActivityStack",TAG+" onRestoreInstanceState");
     }
+
+    @Override
+    protected void onPostCreate(@Nullable Bundle savedInstanceState) {
+        super.onPostCreate(savedInstanceState);
+        Log.i("ActivityStack",TAG+" onPostCreate");
+    }
+
+    @Override
+    protected void onPostResume() {
+        super.onPostResume();
+        Log.i("ActivityStack",TAG+" onPostResume");
+    }
 }
