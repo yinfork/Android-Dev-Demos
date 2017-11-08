@@ -21,7 +21,7 @@ import com.inkenka.devdemos.utils.Utils;
  * Created by yinjianhua on 2017/11/6.
  */
 
-public class CustomPathProgressBar extends ProgressBar {
+public class RoundCornerProgressBar extends ProgressBar {
 
     private Paint mBackgroundPaint = new Paint();
     private Paint mProgressPaint = new Paint();
@@ -29,15 +29,15 @@ public class CustomPathProgressBar extends ProgressBar {
     private int mPathWidth;
     private float mStartOffsetPercent;
 
-    public CustomPathProgressBar(Context context) {
+    public RoundCornerProgressBar(Context context) {
         this(context, null);
     }
 
-    public CustomPathProgressBar(Context context, @Nullable AttributeSet attrs) {
+    public RoundCornerProgressBar(Context context, @Nullable AttributeSet attrs) {
         this(context, attrs, 0);
     }
 
-    public CustomPathProgressBar(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
+    public RoundCornerProgressBar(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
         final TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.CustomPathProgressBarAttr);
 

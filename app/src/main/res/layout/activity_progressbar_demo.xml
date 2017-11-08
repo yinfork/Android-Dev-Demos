@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent">
 
-    <com.inkenka.devdemos.processbar.CustomPathProgressBar
+    <com.inkenka.devdemos.processbar.RoundCornerProgressBar
         android:id="@+id/progress"
         android:layout_width="100dp"
         android:layout_height="30dp"

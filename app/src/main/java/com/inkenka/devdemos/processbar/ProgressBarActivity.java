@@ -18,7 +18,7 @@ public class ProgressBarActivity extends AppCompatActivity {
         setContentView(R.layout.activity_progressbar_demo);
 
 
-        final CustomPathProgressBar customPathProgressBar = (CustomPathProgressBar) findViewById(R.id.progress);
+        final RoundCornerProgressBar customPathProgressBar = (RoundCornerProgressBar) findViewById(R.id.progress);
         customPathProgressBar.setProgress(0);
 
 
