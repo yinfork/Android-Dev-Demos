@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <declare-styleable name="CustomPathProgressBarAttr">
+        <attr name="radius" format="dimension" />
+        <attr name="backgroundColor" format="color" />
+        <attr name="progressColor" format="color" />
+        <attr name="pathWidth" format="dimension" />
+        <attr name="startOffset" format="float" />
+    </declare-styleable>
+
+
+</resources>

@@ -9,6 +9,7 @@ import com.inkenka.devdemos.SingleImageView.SingleImageDemoActivity;
 import com.inkenka.devdemos.SpannableString.SpannableStringActivity;
 import com.inkenka.devdemos.ThrowException.ThrowExceptionActivity;
 import com.inkenka.devdemos.ViewAnim.ViewAnimDemoActivity;
+import com.inkenka.devdemos.processbar.ProgressBarActivity;
 import com.inkenka.devdemos.recycleview.RecycleViewDemoActivity;
 import com.inkenka.devdemos.videoview.VideoViewDemoActivity;
 
@@ -36,6 +37,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private final static String DEMO_MEMORY_ANALYSIS = "Memory Analysis Demo";
     private final static String DEMO_PROCESS_WHITE_LIST = "Add Process White List";
     private final static String DEMO_SPANNABLE_STRING = "Spannable String";
+    private final static String DEMO_PROCESS_BAR = "CustomPath Process Bar";
 
     String[] mDemos = new String[]{
             DEMO_IMAGEVIEW,
@@ -48,7 +50,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             DEMO_THROW_EXCEPTION,
             DEMO_MEMORY_ANALYSIS,
             DEMO_PROCESS_WHITE_LIST,
-            DEMO_SPANNABLE_STRING
+            DEMO_SPANNABLE_STRING,
+            DEMO_PROCESS_BAR
     };
 
     @Override
@@ -102,6 +105,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case DEMO_SPANNABLE_STRING:
                 intent.setClass(MainActivity.this, SpannableStringActivity.class);
+            case DEMO_PROCESS_BAR:
+                intent.setClass(MainActivity.this, ProgressBarActivity.class);
         }
 
         // 判断该Intent是否能被解析再启动

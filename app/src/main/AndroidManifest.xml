@@ -110,6 +110,7 @@
             android:process=":memory20"/>
         <activity android:name=".ProcessWhiteList.ProcessWhiteListActivity"/>
         <activity android:name=".SpannableString.SpannableStringActivity"/>
+        <activity android:name=".processbar.ProgressBarActivity"/>
     </application>
 
 </manifest>
