@@ -39,16 +39,16 @@ public class RoundCornerProgressBar extends ProgressBar {
 
     public RoundCornerProgressBar(Context context, @Nullable AttributeSet attrs, int defStyleAttr) {
         super(context, attrs, defStyleAttr);
-        final TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.CustomPathProgressBarAttr);
+        final TypedArray typedArray = context.obtainStyledAttributes(attrs, R.styleable.RoundCornerProgressBarAttr);
 
         mBackgroundPaint = new Paint();
         mProgressPaint = new Paint();
 
-        int backgroundColor = typedArray.getColor(R.styleable.CustomPathProgressBarAttr_backgroundColor, Color.GRAY);
-        int progressColor = typedArray.getColor(R.styleable.CustomPathProgressBarAttr_progressColor, Color.RED);
-        mPathWidth = typedArray.getDimensionPixelSize(R.styleable.CustomPathProgressBarAttr_pathWidth, Utils.covertDp2Px(context,5));
-        mRadius = typedArray.getDimension(R.styleable.CustomPathProgressBarAttr_radius, Utils.covertDp2Px(context,15f));
-        mStartOffsetPercent = typedArray.getFloat(R.styleable.CustomPathProgressBarAttr_startOffset, 0);
+        int backgroundColor = typedArray.getColor(R.styleable.RoundCornerProgressBarAttr_backgroundColor, Color.GRAY);
+        int progressColor = typedArray.getColor(R.styleable.RoundCornerProgressBarAttr_progressColor, Color.RED);
+        mPathWidth = typedArray.getDimensionPixelSize(R.styleable.RoundCornerProgressBarAttr_pathWidth, Utils.covertDp2Px(context,5));
+        mRadius = typedArray.getDimension(R.styleable.RoundCornerProgressBarAttr_radius, Utils.covertDp2Px(context,15f));
+        mStartOffsetPercent = typedArray.getFloat(R.styleable.RoundCornerProgressBarAttr_startOffset, 0);
 
         mBackgroundPaint.setColor(backgroundColor);
         mBackgroundPaint.setStyle(Paint.Style.STROKE);

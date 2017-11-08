@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
 
-    <declare-styleable name="CustomPathProgressBarAttr">
+    <declare-styleable name="RoundCornerProgressBarAttr">
         <attr name="radius" format="dimension" />
         <attr name="backgroundColor" format="color" />
         <attr name="progressColor" format="color" />
