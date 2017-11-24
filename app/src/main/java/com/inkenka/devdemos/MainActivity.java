@@ -29,15 +29,15 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private final static String DEMO_IMAGEVIEW = "ImageView Demo";
     private final static String DEMO_LISTVIEW = "ListView Demo";
     private final static String DEMO_VIDEOVIEW = "VideoView Demo";
-    private final static String DEMO_FLOATVIEW = "FloatView Demo";
+    private final static String DEMO_FLOATVIEW = "悬浮窗 Demo";
     private final static String DEMO_VIEW_ANIM = "View Anim Demo";
     private final static String DEMO_RECYCLEVIEW = "RecycleView Demo";
-    private final static String DEMO_ACTIVITY_STACK = "Activity Stack Demo";
+    private final static String DEMO_ACTIVITY_STACK = "测试Activity Stack";
     private final static String DEMO_THROW_EXCEPTION = "Throw Exception Demo";
-    private final static String DEMO_MEMORY_ANALYSIS = "Memory Analysis Demo";
-    private final static String DEMO_PROCESS_WHITE_LIST = "Add Process White List";
-    private final static String DEMO_SPANNABLE_STRING = "Spannable String";
-    private final static String DEMO_PROCESS_BAR = "CustomPath Process Bar";
+    private final static String DEMO_MEMORY_ANALYSIS = "模拟前台高内存占用";
+    private final static String DEMO_PROCESS_WHITE_LIST = "添加各机型进程白名单Demo";
+    private final static String DEMO_SPANNABLE_STRING = "图文显示Demo";
+    private final static String DEMO_PROCESS_BAR = "圆角矩形ProgressBar Demo";
 
     String[] mDemos = new String[]{
             DEMO_IMAGEVIEW,
