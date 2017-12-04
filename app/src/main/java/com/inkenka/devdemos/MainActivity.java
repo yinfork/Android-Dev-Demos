@@ -2,6 +2,7 @@ package com.inkenka.devdemos;
 
 import com.inkenka.devdemos.ActivityStack.FirstActivity;
 import com.inkenka.devdemos.FloatView.FloatViewDemoActivity;
+import com.inkenka.devdemos.KillProcessObserver.KillProcessObserverDemoActivity;
 import com.inkenka.devdemos.MemoryAnalysis.MemoryAnalysisActivity;
 import com.inkenka.devdemos.MultiItemList.ListViewDemoActivity;
 import com.inkenka.devdemos.ProcessWhiteList.ProcessWhiteListActivity;
@@ -37,7 +38,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private final static String DEMO_MEMORY_ANALYSIS = "模拟前台高内存占用";
     private final static String DEMO_PROCESS_WHITE_LIST = "添加各机型进程白名单Demo";
     private final static String DEMO_SPANNABLE_STRING = "图文显示Demo";
-    private final static String DEMO_PROCESS_BAR = "圆角矩形ProgressBar Demo";
+    private final static String DEMO_PROGRESS_BAR = "圆角矩形ProgressBar Demo";
+    private final static String DEMO_KILL_PROCESS_OBSERVER = "统计进程被杀时间";
 
     String[] mDemos = new String[]{
             DEMO_IMAGEVIEW,
@@ -51,7 +53,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             DEMO_MEMORY_ANALYSIS,
             DEMO_PROCESS_WHITE_LIST,
             DEMO_SPANNABLE_STRING,
-            DEMO_PROCESS_BAR
+            DEMO_PROGRESS_BAR,
+            DEMO_KILL_PROCESS_OBSERVER
     };
 
     @Override
@@ -105,8 +108,10 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case DEMO_SPANNABLE_STRING:
                 intent.setClass(MainActivity.this, SpannableStringActivity.class);
-            case DEMO_PROCESS_BAR:
+            case DEMO_PROGRESS_BAR:
                 intent.setClass(MainActivity.this, ProgressBarActivity.class);
+            case DEMO_KILL_PROCESS_OBSERVER:
+                intent.setClass(MainActivity.this, KillProcessObserverDemoActivity.class);
         }
 
         // 判断该Intent是否能被解析再启动

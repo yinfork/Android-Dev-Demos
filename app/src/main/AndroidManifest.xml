@@ -108,9 +108,14 @@
         <service
             android:name=".MemoryAnalysis.BigMemoryService20"
             android:process=":memory20"/>
+
         <activity android:name=".ProcessWhiteList.ProcessWhiteListActivity"/>
         <activity android:name=".SpannableString.SpannableStringActivity"/>
         <activity android:name=".processbar.ProgressBarActivity"/>
+
+        <activity android:name=".KillProcessObserver.KillProcessObserverDemoActivity" />
+        <service android:name=".KillProcessObserver.SimulatedWorkerService"
+            android:process=":service"/>
     </application>
 
 </manifest>
