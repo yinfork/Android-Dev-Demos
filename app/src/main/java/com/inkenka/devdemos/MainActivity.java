@@ -10,6 +10,7 @@ import com.inkenka.devdemos.SingleImageView.SingleImageDemoActivity;
 import com.inkenka.devdemos.SpannableString.SpannableStringActivity;
 import com.inkenka.devdemos.ThrowException.ThrowExceptionActivity;
 import com.inkenka.devdemos.ViewAnim.ViewAnimDemoActivity;
+import com.inkenka.devdemos.cpuinfo.CpuInfoDemoActivity;
 import com.inkenka.devdemos.processbar.ProgressBarActivity;
 import com.inkenka.devdemos.recycleview.RecycleViewDemoActivity;
 import com.inkenka.devdemos.videoview.VideoViewDemoActivity;
@@ -40,6 +41,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private final static String DEMO_SPANNABLE_STRING = "图文显示Demo";
     private final static String DEMO_PROGRESS_BAR = "圆角矩形ProgressBar Demo";
     private final static String DEMO_KILL_PROCESS_OBSERVER = "统计进程被杀时间";
+    private final static String DEMO_READ_CPU_INFO = "读取CPU信息";
 
     String[] mDemos = new String[]{
             DEMO_IMAGEVIEW,
@@ -54,7 +56,8 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             DEMO_PROCESS_WHITE_LIST,
             DEMO_SPANNABLE_STRING,
             DEMO_PROGRESS_BAR,
-            DEMO_KILL_PROCESS_OBSERVER
+            DEMO_KILL_PROCESS_OBSERVER,
+            DEMO_READ_CPU_INFO
     };
 
     @Override
@@ -112,6 +115,11 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 intent.setClass(MainActivity.this, ProgressBarActivity.class);
             case DEMO_KILL_PROCESS_OBSERVER:
                 intent.setClass(MainActivity.this, KillProcessObserverDemoActivity.class);
+            case DEMO_READ_CPU_INFO:
+                intent.setClass(MainActivity.this, CpuInfoDemoActivity.class);
+
+
+
         }
 
         // 判断该Intent是否能被解析再启动

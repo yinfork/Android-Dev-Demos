@@ -116,6 +116,7 @@
         <activity android:name=".KillProcessObserver.KillProcessObserverDemoActivity" />
         <service android:name=".KillProcessObserver.SimulatedWorkerService"
             android:process=":service"/>
+        <activity android:name=".cpuinfo.CpuInfoDemoActivity" />
     </application>
 
 </manifest>
