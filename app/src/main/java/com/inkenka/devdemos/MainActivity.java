@@ -111,15 +111,16 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case DEMO_SPANNABLE_STRING:
                 intent.setClass(MainActivity.this, SpannableStringActivity.class);
+                break;
             case DEMO_PROGRESS_BAR:
                 intent.setClass(MainActivity.this, ProgressBarActivity.class);
+                break;
             case DEMO_KILL_PROCESS_OBSERVER:
                 intent.setClass(MainActivity.this, KillProcessObserverDemoActivity.class);
+                break;
             case DEMO_READ_CPU_INFO:
                 intent.setClass(MainActivity.this, CpuInfoDemoActivity.class);
-
-
-
+                break;
         }
 
         // 判断该Intent是否能被解析再启动
