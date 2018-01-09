@@ -44,19 +44,19 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private final static String DEMO_READ_CPU_INFO = "读取CPU信息";
 
     String[] mDemos = new String[]{
-            DEMO_IMAGEVIEW,
-            DEMO_LISTVIEW,
-            DEMO_VIDEOVIEW,
-            DEMO_FLOATVIEW,
-            DEMO_VIEW_ANIM,
-            DEMO_RECYCLEVIEW,
-            DEMO_ACTIVITY_STACK,
-            DEMO_THROW_EXCEPTION,
-            DEMO_MEMORY_ANALYSIS,
-            DEMO_PROCESS_WHITE_LIST,
-            DEMO_SPANNABLE_STRING,
-            DEMO_PROGRESS_BAR,
-            DEMO_KILL_PROCESS_OBSERVER,
+//            DEMO_IMAGEVIEW,
+//            DEMO_LISTVIEW,
+//            DEMO_VIDEOVIEW,
+//            DEMO_FLOATVIEW,
+//            DEMO_VIEW_ANIM,
+//            DEMO_RECYCLEVIEW,
+//            DEMO_ACTIVITY_STACK,
+//            DEMO_THROW_EXCEPTION,
+//            DEMO_MEMORY_ANALYSIS,
+//            DEMO_PROCESS_WHITE_LIST,
+//            DEMO_SPANNABLE_STRING,
+//            DEMO_PROGRESS_BAR,
+//            DEMO_KILL_PROCESS_OBSERVER,
             DEMO_READ_CPU_INFO
     };
 
