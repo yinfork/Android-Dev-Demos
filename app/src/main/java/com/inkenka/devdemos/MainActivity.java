@@ -5,6 +5,7 @@ import com.inkenka.devdemos.FloatView.FloatViewDemoActivity;
 import com.inkenka.devdemos.KillProcessObserver.KillProcessObserverDemoActivity;
 import com.inkenka.devdemos.MemoryAnalysis.MemoryAnalysisActivity;
 import com.inkenka.devdemos.MultiItemList.ListViewDemoActivity;
+import com.inkenka.devdemos.Notification.NotificationDemoActivity;
 import com.inkenka.devdemos.ProcessWhiteList.ProcessWhiteListActivity;
 import com.inkenka.devdemos.SingleImageView.SingleImageDemoActivity;
 import com.inkenka.devdemos.SpannableString.SpannableStringActivity;
@@ -42,22 +43,24 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private final static String DEMO_PROGRESS_BAR = "圆角矩形ProgressBar Demo";
     private final static String DEMO_KILL_PROCESS_OBSERVER = "统计进程被杀时间";
     private final static String DEMO_READ_CPU_INFO = "读取CPU信息";
+    private final static String DEMO_NOTIFICATION = "发送消息通知";
 
     String[] mDemos = new String[]{
-//            DEMO_IMAGEVIEW,
-//            DEMO_LISTVIEW,
-//            DEMO_VIDEOVIEW,
-//            DEMO_FLOATVIEW,
-//            DEMO_VIEW_ANIM,
-//            DEMO_RECYCLEVIEW,
-//            DEMO_ACTIVITY_STACK,
-//            DEMO_THROW_EXCEPTION,
-//            DEMO_MEMORY_ANALYSIS,
-//            DEMO_PROCESS_WHITE_LIST,
-//            DEMO_SPANNABLE_STRING,
-//            DEMO_PROGRESS_BAR,
-//            DEMO_KILL_PROCESS_OBSERVER,
-            DEMO_READ_CPU_INFO
+            DEMO_IMAGEVIEW,
+            DEMO_LISTVIEW,
+            DEMO_VIDEOVIEW,
+            DEMO_FLOATVIEW,
+            DEMO_VIEW_ANIM,
+            DEMO_RECYCLEVIEW,
+            DEMO_ACTIVITY_STACK,
+            DEMO_THROW_EXCEPTION,
+            DEMO_MEMORY_ANALYSIS,
+            DEMO_PROCESS_WHITE_LIST,
+            DEMO_SPANNABLE_STRING,
+            DEMO_PROGRESS_BAR,
+            DEMO_KILL_PROCESS_OBSERVER,
+            DEMO_READ_CPU_INFO,
+            DEMO_NOTIFICATION
     };
 
     @Override
@@ -120,6 +123,9 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
                 break;
             case DEMO_READ_CPU_INFO:
                 intent.setClass(MainActivity.this, CpuInfoDemoActivity.class);
+                break;
+            case DEMO_NOTIFICATION:
+                intent.setClass(MainActivity.this, NotificationDemoActivity.class);
                 break;
         }
 

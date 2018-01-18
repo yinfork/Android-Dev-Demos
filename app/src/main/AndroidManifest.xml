@@ -8,6 +8,9 @@
     <!-- 使用SYSTEM_ALERT_WINDOW时必须要加 -->
     <uses-permission android:name="android.permission.SYSTEM_ALERT_WINDOW" />
 
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.FLASHLIGHT"/>
+
     <application
         android:allowBackup="true"
         android:icon="@mipmap/ic_launcher"
@@ -117,6 +120,7 @@
         <service android:name=".KillProcessObserver.SimulatedWorkerService"
             android:process=":service"/>
         <activity android:name=".cpuinfo.CpuInfoDemoActivity" />
+        <activity android:name=".Notification.NotificationDemoActivity" />
     </application>
 
 </manifest>
